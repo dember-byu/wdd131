@@ -78,7 +78,7 @@ h1 {
     gap: 20px;
 }
 
-.card h3 {
+.card h2 {
     background-color: var(--primary-color);
     color: white;
     margin: 0;
@@ -127,7 +127,7 @@ footer {
     color: #ffd700;
 }
 
-h4 {
+h3 {
     text-align: center;
 }
 
