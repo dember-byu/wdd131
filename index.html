@@ -1,50 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es-MX">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Dember Perez</title>
-    <meta name="description"
-        content="WDD 131 - Dynamic Web Fundamentals | Dember Perez | Course landing page with projects, scripture link, and portfolio summary.">
-    <meta name="author" content="Dember Perez">
+    <title>WDD 131 - Dynamic Web Fundamentals – Dember Perez Colquehuanca</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Dember Perez Colquehuanca ">
+    <meta name="author" content="Dember">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="styles/base.css">
     <script src="scripts/getdates.js" defer></script>
 </head>
-
 <body>
     <header>
-        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
         <nav>
-            <a href="https://www.linkedin.com/">LinkedIn</a>
-            <a href="https://byupw.instructure.com/">Canvas</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/jacob/6?lang=eng&id=p12#p12">Favorite
-                Scripture</a>
-            <a href="final-project/">Final Project</a>
+            <a href="www.linkedin.com/in/demberperez" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/jacob/6?lang=eng&id=p12#p12" target="_blank">Scripture</a>
+            <a href="final-project/index.html">Final Project</a>
         </nav>
     </header>
 
     <main>
-        <h1>Your Name</h1>
-        <section class="card">
-            <h2>About Me</h2>
-            <img src="images/profile.jpg" alt="Profile picture">
-            <p>Hello! I’m a student in WDD131 learning dynamic web fundamentals. I enjoy coding, design, and building
-                interactive web projects.</p>
-        </section>
+        <h1>Dember Perez Colquehuanca</h1>
+        <div class="grid-container">
+            <section class="card">
+                <h3>About Me</h3>
+                <div class="card-content">
+                    <p>My name is Dember Perez. I was born in Bolivia and live with my family in Cochabamba. I currently work as a planning technician for a municipality in my city. I love learning and expanding my knowledge, and I enjoy watching and playing soccer.</p>
+                    <img src="images/profile.jpg" alt="Foto de Tu Nombre" width="150">
+                </div>
+                <h4>Cochabamba, Bolivia</h4>
+                <hr>
+                <div class="location">
+                    <img src="images/bolivia.png" alt="flag of my country" width="100">
+                    <p>Bolivia, known as the heart of South America, is a fascinating country with the Salar de Uyuni (the world's largest salt flat) and 37 official languages. It is a plurinational nation with immense biodiversity, home to the highest navigable lake (Lake Titicaca) and the most populous high-altitude city in the world, La Paz.</p>
+                </div>
+            </section>
 
-        <section class="card">
-            <h2>Course Projects</h2>
-            <img src="images/projects.jpg" alt="Projects illustration">
-            <p>This section will showcase my assignments and final project as the course progresses. Stay tuned for
-                updates!</p>
-        </section>
+            <section class="card">
+                <h3>Web Dev Resources</h3>
+                <ul>
+                    <li><a href="https://dev.to">Dev.to Community</a></li>
+                    <li><a href="https://smashingmagazine.com">Smashing Magazine</a></li>
+                    <li><a href="https://css-tricks.com">CSS Tricks</a></li>
+                    <li><a href="https://w3schools.com">W3 Schools</a></li>
+                </ul>
+            </section>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; <span id="currentyear"></span> Your Name – Bolivia</p>
+        <p>&copy;<span id="currentyear"></span> | Dember Perez Colquehuanca | Cochabamba - Bolivia</p>
         <p id="lastModified"></p>
     </footer>
 </body>
-
 </html>
