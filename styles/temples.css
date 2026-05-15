@@ -22,7 +22,7 @@ header h1 {
 }
 
 nav {
-    display: none;
+    display: flex;
     flex-direction: column;
     background-color: #4a2c2a;
     align-items: center;
@@ -32,6 +32,7 @@ nav a {
     color: white;
     text-decoration: none;
     padding: 0.5rem;
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {

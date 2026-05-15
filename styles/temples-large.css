@@ -11,3 +11,21 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+
+
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row;
+        /* en pantallas grandes: enlaces en fila */
+        justify-content: center;
+        /* centra el menú horizontalmente */
+        gap: 1rem;
+        /* espacio entre enlaces */
+    }
+
+    #hamburger {
+        display: flex;
+        /* oculta el botón hamburguesa */
+    }
+}
