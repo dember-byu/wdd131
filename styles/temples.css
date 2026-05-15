@@ -70,6 +70,15 @@ figure img {
     width: 100%;
     display: block;
     border-radius: 6px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+        /* animación suave */
+}
+
+figure img:hover {
+    transform: scale(1.05);
+    /* zoom ligero */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    /* sombra más marcada */
 }
 
 figcaption {
