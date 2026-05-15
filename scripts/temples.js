@@ -12,19 +12,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Handle responsive hamburger menu interactions
-    const menuToggle = document.getElementById("menu-toggle");
-    const primaryNav = document.getElementById("primary-nav");
+    const hamburger = document.getElementById("hamburger");
+    const nav = document.querySelector("nav");
 
-    if (menuToggle && primaryNav) {
-        menuToggle.addEventListener("click", () => {
-            primaryNav.classList.toggle("open");
-
-            // Toggle hamburger icon appearance between ☰ and ✕
-            if (primaryNav.classList.contains("open")) {
-                menuToggle.innerHTML = "&#10006;"; // 'X' close symbol
-            } else {
-                menuToggle.innerHTML = "&#9776;"; // Hamburger symbol
-            }
-        });
-    }
+    hamburger.addEventListener("click", () => {
+        if (nav.style.display === "flex") {
+            nav.style.display = "none";
+            hamburger.textContent = "☰"; // vuelve al ícono hamburguesa
+        } else {
+            nav.style.display = "flex";
+            hamburger.textContent = "✖"; // cambia a ícono de cerrar
+        }
+    });
+    
 });
