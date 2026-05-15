@@ -1,17 +1,30 @@
-// Footer year and last modified
-document.getElementById("year").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = document.lastModified;
+document.addEventListener("DOMContentLoaded", () => {
+    // Inject current year dynamically
+    const currentYearSpan = document.getElementById("currentyear");
+    if (currentYearSpan) {
+        currentYearSpan.textContent = new Date().getFullYear();
+    }
 
-// Hamburger menu toggle
-const hamburger = document.getElementById("hamburger");
-const nav = document.querySelector("nav");
+    // Inject document last modified date dynamically
+    const lastModifiedSpan = document.getElementById("lastModified");
+    if (lastModifiedSpan) {
+        lastModifiedSpan.textContent = document.lastModified;
+    }
 
-hamburger.addEventListener("click", () => {
-    if (nav.style.display === "flex") {
-        nav.style.display = "none";
-        hamburger.textContent = "☰";
-    } else {
-        nav.style.display = "flex";
-        hamburger.textContent = "✖";
+    // Handle responsive hamburger menu interactions
+    const menuToggle = document.getElementById("menu-toggle");
+    const primaryNav = document.getElementById("primary-nav");
+
+    if (menuToggle && primaryNav) {
+        menuToggle.addEventListener("click", () => {
+            primaryNav.classList.toggle("open");
+
+            // Toggle hamburger icon appearance between ☰ and ✕
+            if (primaryNav.classList.contains("open")) {
+                menuToggle.innerHTML = "&#10006;"; // 'X' close symbol
+            } else {
+                menuToggle.innerHTML = "&#9776;"; // Hamburger symbol
+            }
+        });
     }
 });
