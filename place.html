@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madagascar - Country Page</title>
+    <!-- Enlace a la hoja de estilos -->
+    <link rel="stylesheet" href="styles/place.css">
+    <!-- Enlace al archivo de JavaScript con atributo defer -->
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Cochabamba</h1>
+    </header>
+
+    <main>
+        <!-- Elemento picture para imágenes de fondo responsivas utilizando WebP -->
+        <picture class="hero-container">
+            <source srcset="images/cochabamba.webp" media="(min-width: 768px)">
+            <img src="images/cochabamba.webp" alt="Ring-tailed lemurs in Madagascar" class="hero-image">
+        </picture>
+
+        <!-- Tarjeta de Datos -->
+        <section class="card data-card">
+            <h2>Data</h2>
+            <ul class="data-list">
+                <li><strong>Area:</strong> 55,631 sq km</li>
+                <li><strong>Population:</strong> 1,758,143</li>
+                <li><strong>Capital:</strong> Cochabamba</li>
+                <li><strong>Languages:</strong> Quechua, Spanish</li>
+                <li><strong>Currency:</strong> Boliviano</li>
+                <li><strong>Time Zone:</strong> UTC-4</li>
+                <li><strong>Calling Code:</strong> +591</li>
+                <li><strong>Internet TLD:</strong> .bo</li>
+            </ul>
+        </section>
+
+        <!-- Tarjeta de Clima -->
+        <section class="card weather-card">
+            <h2>Weather</h2>
+            <!-- Ícono SVG visible únicamente en la versión móvil -->
+            <div class="weather-icon-mobile">
+                <img src="images/weather.svg" alt="Partly cloudy icon">
+            </div>
+            <ul class="weather-list">
+                <li><strong>Temperature:</strong> 18 °C</li>
+                <li><strong>Conditions:</strong> Clear</li>
+                <li><strong>Wind:</strong> 8 km/h</li>
+                <li><strong>Wind Chill:</strong> <span id="wind-chill"></span></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="current-year"></span> 😎 Dember Perez Colquehuanca 😎 Cochabamba</p>
+        <p>Last Modification: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
