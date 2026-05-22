@@ -28,7 +28,7 @@ body {
 header {
     background-color: var(--secondary-color);
     border-bottom: 10px solid var(--primary-color);
-    color: var(--text-color);
+    color: var(--white);
     text-align: center;
     padding: 1.2rem;
 }
