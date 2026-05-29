@@ -1,0 +1,32 @@
+/* 2 columnas en pantallas medianas */
+@media (min-width: 600px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 3 columnas en pantallas grandes */
+@media (min-width: 900px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row;
+        /* en pantallas grandes: enlaces en fila */
+        justify-content: center;
+        /* centra el menú horizontalmente */
+        gap: 1rem;
+        display: flex;
+        /* espacio entre enlaces */
+    }
+
+    #hamburger {
+        display: none;
+        /* oculta el botón hamburguesa */
+    }
+}
