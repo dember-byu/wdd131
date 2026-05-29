@@ -83,25 +83,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
   
   function createTempleCard(filteredTemples) {
-    container.innerHTML = ""; // Clear out stale cards
-    
-    filteredTemples.forEach(temple => {
-      const card = document.createElement("section");
-      card.classList.add("temple-card");
+  container.innerHTML = ""; // Limpia las tarjetas anteriores
+  
+  filteredTemples.forEach(temple => {
+    const card = document.createElement("section");
+    card.classList.add("temple-card");
 
-      
-      const year = temple.dedicated.split(",")[0].trim();
-
-      card.innerHTML = `
-        <h3>${temple.templeName}</h3>
-        <p><span>Location:</span> ${temple.location}</p>
-        <p><span>Dedicated:</span> ${temple.dedicated}</p>
-        <p><span>Size:</span> ${temple.area} sq ft</p>
-        <img src="${temple.imageUrl}" alt="${temple.templeName} Temple" loading="lazy">
-      `;
-      container.appendChild(card);
-    });
-  }
+    card.innerHTML = `
+      <h3>${temple.templeName}</h3>
+      <p><span>Location:</span> ${temple.location}</p>
+      <p><span>Dedicated:</span> ${temple.dedicated}</p>
+      <p><span>Size:</span> ${temple.area} sq ft</p>
+      <!-- CÓDIGO CORREGIDO: Se añaden dimensiones explícitas para evitar saltos de diseño -->
+      <img src="${temple.imageUrl}" 
+           alt="${temple.templeName} Temple" 
+           loading="lazy" 
+           width="400" 
+           height="250">
+    `;
+    container.appendChild(card);
+  });
+}
 
   
   function getTempleYear(dateStr) {
