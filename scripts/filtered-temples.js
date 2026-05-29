@@ -85,9 +85,13 @@ document.addEventListener("DOMContentLoaded", () => {
   function createTempleCard(filteredTemples) {
   container.innerHTML = ""; // Limpia las tarjetas anteriores
   
-  filteredTemples.forEach(temple => {
+  filteredTemples.forEach((temple, index) => {
     const card = document.createElement("section");
     card.classList.add("temple-card");
+
+    const isFirstImage = index === 0;
+    const loadingAttribute = isFirstImage ? "" : 'loading="lazy"';
+    const priorityAttribute = isFirstImage ? 'fetchpriority="high"' : "";
 
     card.innerHTML = `
       <h3>${temple.templeName}</h3>

@@ -66,6 +66,7 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
   margin-top: 1.5rem;
+  min-height: 80vh;
 }
 
 
