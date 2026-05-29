@@ -14,13 +14,14 @@
 
   /* Cambia la navegación a filas horizontales en pantallas grandes */
   nav {
-    flex-direction: row;
-    gap: 1.5rem;
-  }
-
-  nav a {
-    width: auto;
-    max-width: none;
-    padding: 0.25rem 0.5rem;
+    flex-direction: row;       /* Cambia la orientación a fila (horizontal) */
+    justify-content: center;   /* Centra los elementos horizontalmente */
+    gap: 1.5rem;               /* Separa un poco más los enlaces en escritorio */
   }
 }
+
+  nav a {
+    display: inline-block;     /* Permite que se coloquen uno al lado del otro */
+    width: auto;               /* Elimina el ancho del 100% que los estiraba */
+    max-width: none;
+  }

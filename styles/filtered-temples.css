@@ -36,6 +36,7 @@ nav a {
   box-sizing: border-box;
   border-radius: 4px;
   transition: background-color 0.3s;
+  display: block; /* Asegura que cada enlace ocupe toda la línea en móvil */
 }
 
 nav a:hover, nav a.active {
