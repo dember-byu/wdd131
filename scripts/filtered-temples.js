@@ -71,17 +71,17 @@ const temples = [
   }
 ];
 
-// Append the complete "temples" array here from Step 1
+
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Update footer dates dynamically
+  
   document.getElementById("currentyear").textContent = new Date().getFullYear();
   document.getElementById("lastModified").textContent = document.lastModified;
 
   const container = document.getElementById("temple-container");
   const title = document.getElementById("gallery-title");
 
-  // Main execution function to build structural HTML card components
+  
   function createTempleCard(filteredTemples) {
     container.innerHTML = ""; // Clear out stale cards
     
@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const card = document.createElement("section");
       card.classList.add("temple-card");
 
-      // Extract Year from dedicated format "YYYY, Month, DD"
+      
       const year = temple.dedicated.split(",")[0].trim();
 
       card.innerHTML = `
@@ -103,12 +103,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Helper method to parse year integers safely from arrays
+  
   function getTempleYear(dateStr) {
     return parseInt(dateStr.split(",")[0].trim(), 10);
   }
 
-  // Handle Filtering Navigation Requests
+  
   document.getElementById("home").addEventListener("click", () => {
     title.textContent = "Home";
     createTempleCard(temples);
@@ -138,6 +138,6 @@ document.addEventListener("DOMContentLoaded", () => {
     createTempleCard(smallTemples);
   });
 
-  // Render initialization display state
+  
   createTempleCard(temples);
 });

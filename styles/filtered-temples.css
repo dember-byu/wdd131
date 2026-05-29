@@ -21,7 +21,7 @@ header {
 
 nav {
   display: flex;
-  flex-direction: column; /* Menú vertical en pantallas pequeñas */
+  flex-direction: column; 
   gap: 0.75rem;
   align-items: center;
   padding: 0.5rem 0;
@@ -38,7 +38,7 @@ nav a {
   box-sizing: border-box;
   border-radius: 4px;
   transition: background-color 0.3s;
-  display: block; /* Asegura que cada enlace ocupe toda la línea en móvil */
+  display: block; 
 }
 
 nav ul {
@@ -60,7 +60,7 @@ main {
   padding: 2rem;
 }
 
-/* Responsive CSS Grid Configuration */
+
 .temple-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -68,7 +68,7 @@ main {
   margin-top: 1.5rem;
 }
 
-/* Card Presentation Design matching the screenshot */
+
 .temple-card {
   background-color: var(--bg-card);
   border: 1px solid #e0e0e0;
@@ -135,7 +135,7 @@ footer {
     width: auto;
     max-width: none;
   }
-  
+
   nav ul {
     display: flex;
     flex-direction: row;
