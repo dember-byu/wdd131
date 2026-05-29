@@ -39,6 +39,15 @@ nav a {
   display: block; /* Asegura que cada enlace ocupe toda la línea en móvil */
 }
 
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none; 
+    padding: 0;
+  }
+
 nav a:hover, nav a.active {
   background-color: rgba(255, 255, 0, 0.2);
   color: #ffcc00;
