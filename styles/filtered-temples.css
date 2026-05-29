@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 :root {
   --primary-color: #002147;
   --bg-card: #f9f9f9;
@@ -132,5 +134,12 @@ footer {
     display: inline-block;
     width: auto;
     max-width: none;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
   }
 }
