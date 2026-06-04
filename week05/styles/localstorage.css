@@ -1,0 +1,63 @@
+:root {
+  --primary-color: #37474f;
+  --accent-color: #b01a1a;
+  --bg-color: #f4f4f4;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 8px;
+  font-size: 16px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Regla crítica solicitada en las instrucciones del ejercicio */
+.delete {
+  width: fit-content;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0 5px;
+}
