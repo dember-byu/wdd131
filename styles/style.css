@@ -1,15 +1,40 @@
 @media (min-width: 600px) {
     body {
-        background-color: #eaecee; /* Fondo un poco más oscuro en computadoras */
-        padding: 40px 20px;       /* Más espacio alrededor en pantallas grandes */
+        background-color: #eaecee; 
+        padding: 40px 20px;       
     }
 
     .form-wrapper {
-        box-shadow: 0 10px 25px rgba(0,0,0,0.15); /* Sombra más suave y elegante */
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15); 
     }
-}d
+}
 
-/* Base Layout and Font Styles */
+header {
+    background-color: #3b0b3b; 
+    color: #3700ff;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    
+    max-width: 450px;          
+    margin: 20px auto;         
+    
+    border-radius: 4px;        
+    box-sizing: border-box;    
+}
+
+
+header h1 {
+    font-size: 22px;           
+    margin: 0;
+    font-weight: bold;
+    color:#eaecee
+}
+
+
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f7f6;
@@ -22,9 +47,9 @@ body {
 }
 
 main {
-    background-color: #e1d5e7; /* Color grisáceo/morado de tu imagen */
-    max-width: 450px;          /* Ancho exacto de la tarjeta */
-    margin: 20px auto;         /* Centra el cuadro y da espacio arriba/abajo */
+    background-color: #e1d5e7; 
+    max-width: 450px;          
+    margin: 20px auto;         
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -37,19 +62,19 @@ h1 {
     text-align: center;
 }
 
-/* Distinct spacing between field elements */
+
 .form-group {
     margin-bottom: 20px;
 }
 
-/* Clear, accessible labels */
+
 label {
     display: block;
     font-weight: bold;
     margin-bottom: 8px;
 }
 
-/* Text, select, and textarea inputs scale across mobile space smoothly */
+
 input[type="text"],
 input[type="date"],
 select,
@@ -59,10 +84,10 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    font-size: 16px; /* Prevents auto-zooming bugs on mobile browsers */
+    font-size: 16px; 
 }
 
-/* Layout wrapping helpers for grouped fields */
+
 .rating-container, .checkbox-container {
     display: flex;
     flex-wrap: wrap;
@@ -76,7 +101,7 @@ textarea {
     cursor: pointer;
 }
 
-/* Visually actionable submit button */
+
 input[type="submit"], .btn-link {
     background-color: #27ae60;
     color: white;
@@ -97,7 +122,7 @@ input[type="submit"]:hover, .btn-link:hover {
     background-color: #219653;
 }
 
-/* Counter Box styling on the review page */
+
 .confirmation-box {
     text-align: center;
 }
@@ -115,9 +140,9 @@ input[type="submit"]:hover, .btn-link:hover {
     color: #117a65;
 }
 
-/* Consistent Footer placement */
+
 footer {
-    background-color: #3b0b3b; /* Fondo morado oscuro */
+    background-color: #3b0b3b; 
     color: #ffffff;
     text-align: center;
     padding: 15px 10px;
@@ -125,12 +150,12 @@ footer {
     font-family: Arial, sans-serif;
     line-height: 1.5;
     
-    /* Configuración clave para alinear con el main */
-    max-width: 450px;          /* TIENE QUE SER EL MISMO ANCHO QUE EL MAIN */
-    margin: 20px auto;         /* El "20px" crea la separación física con el main */
+
+    max-width: 450px;          
+    margin: 20px auto;         
     
-    border-radius: 4px;        /* Pequeña curva opcional en las esquinas */
-    box-sizing: border-box;    /* Asegura que el padding no estire el ancho */
+    border-radius: 4px;        
+    box-sizing: border-box;    
 }
 
 

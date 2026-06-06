@@ -11,19 +11,18 @@
 </head>
 <body>
 
-    <!-- El contenedor mantiene todo alineado y está dentro del body -->
+
     <div class="form-wrapper">
 
-        <!-- Un solo header antes del main y del footer -->
         <header>
             <h1>Product Review</h1>
         </header>
 
-        <!-- Contenido principal -->
+
         <main>
             <form action="review.html" method="get">
     
-    <!-- Product Name Dropdown -->
+
     <div class="form-group">
         <label for="product-select">Product Name *</label>
         <select id="product-select" name="productName" required>
@@ -31,7 +30,7 @@
         </select>
     </div>
 
-    <!-- Overall Rating Radio Buttons (Separated Labels with FOR attributes) -->
+
     <div class="form-group">
         <label>Overall Rating *</label>
         <div class="rating-container">
@@ -52,13 +51,13 @@
         </div>
     </div>
 
-    <!-- Date of Installation -->
+
     <div class="form-group">
         <label for="install-date">Date of Installation *</label>
         <input type="date" id="install-date" name="installDate" required>
     </div>
 
-    <!-- Useful Features Checkboxes (Separated Labels with FOR attributes) -->
+
     <div class="form-group">
         <label>Useful Features (Check all that apply)</label>
         <div class="checkbox-container">
@@ -76,32 +75,32 @@
         </div>
     </div>
 
-    <!-- Written Review -->
+
     <div class="form-group">
         <label for="written-review">Written Review</label>
         <textarea id="written-review" name="writtenReview" rows="4" placeholder="Write your review here..."></textarea>
     </div>
 
-    <!-- User Name -->
+
     <div class="form-group">
         <label for="user-name">User Name</label>
         <input type="text" id="user-name" name="userName" placeholder="e.g. Jane Doe">
     </div>
 
-    <!-- Submit Button -->
+
     <input type="submit" value="Submit Review">
 </form>
 
         </main>
 
-        <!-- Un solo footer al final del documento, dentro del body -->
+
         <footer>
             <p>&copy;2026 😎 Dember Perez Colquehuanca 😎</p>
             <p>Cochabamba</p>
             <p>Last Modification: <span id="last-mod-date">02/26/2024 13:56:10</span></p>
         </footer>
 
-    </div> <!-- Fin del form-wrapper -->
+    </div> 
 
 </body>
 </html>
