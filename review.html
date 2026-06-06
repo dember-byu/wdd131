@@ -3,29 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dember Perez Colquehuanca">
+    <meta name="description" content="Confirmation page showing the successfully submitted product review counter.">
     <title>Review Confirmed</title>
     <link rel="stylesheet" href="styles/style.css">
     <script src="scripts/review.js" defer></script>
 </head>
 <body>
 
-    <main class="confirmation-box">
-        <h1>Thank You!</h1>
-        <p>Your review has been successfully submitted.</p>
-        
-        <!-- Submission counter container -->
-        <div class="counter-box">
-            <p>Total reviews completed: <strong id="review-count">0</strong></p>
-        </div>
+    <div class="form-wrapper">
 
-        <a href="form.html" class="btn-link">Return to Form</a>
-    </main>
+        <header>
+            <h1>Thank You!</h1>
+        </header>
 
-    <footer>
-    <p>&copy;2026 😎 Dember Perez Colquehuanca 😎</p>
-    <p>Cochabamba</p>
-    <p>Last Modification: <span id="last-mod-date">02/26/2024 13:56:10</span></p>
-</footer>
+        <main class="confirmation-box">
+            <p>Your review has been successfully submitted.</p>
+            
+            <div class="counter-box">
+                <p>Total reviews completed: <strong id="review-count">0</strong></p>
+            </div>
+
+            <a href="form.html" class="btn-link">Return to Form</a>
+        </main>
+
+        <footer>
+            <p>&copy;2026 😎 Dember Perez Colquehuanca 😎</p>
+            <p>Cochabamba</p>
+            <p>Last Modification: <span id="last-mod-date">02/26/2024 13:56:10</span></p>
+        </footer>
+
+    </div>
 
 </body>
 </html>
