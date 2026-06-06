@@ -81,12 +81,19 @@ select,
 textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #767676;
     border-radius: 4px;
     box-sizing: border-box;
-    font-size: 16px; 
+    font-size: 16px;
+    background-color: #ffffff !important;
+    color: #212529 !important; 
 }
 
+input::placeholder,
+textarea::placeholder {
+    color: #555555 !important; 
+    opacity: 1; 
+}
 
 .rating-container {
     display: flex;
