@@ -26,7 +26,7 @@
     <div class="form-group">
         <label for="product-select">Product Name *</label>
         <select id="product-select" name="productName" required>
-            <option value="" disabled selected>Select a Product ...</option>
+            <option value="" disabled selected>Choose a Product ...</option>
         </select>
     </div>
 
@@ -34,21 +34,27 @@
     <div class="form-group">
         <label>Overall Rating *</label>
         <div class="rating-container">
-            <input type="radio" id="rate-1" name="rating" value="1" required>
-            <label for="rate-1">1 ☆</label>
-
-            <input type="radio" id="rate-2" name="rating" value="2" required>
-            <label for="rate-2">2 ☆</label>
-
-            <input type="radio" id="rate-3" name="rating" value="3" required>
-            <label for="rate-3">3 ☆</label>
-
-            <input type="radio" id="rate-4" name="rating" value="4" required>
-            <label for="rate-4">4 ☆</label>
-
-            <input type="radio" id="rate-5" name="rating" value="5" required>
-            <label for="rate-5">5 ☆</label>
-        </div>
+    <div class="rating-item">
+        <input type="radio" id="rate-1" name="rating" value="1" required>
+        <label for="rate-1">☆</label>
+    </div>
+    <div class="rating-item">
+        <input type="radio" id="rate-2" name="rating" value="2" required>
+        <label for="rate-2">☆☆</label>
+    </div>
+    <div class="rating-item">
+        <input type="radio" id="rate-3" name="rating" value="3" required>
+        <label for="rate-3">☆☆☆</label>
+    </div>
+    <div class="rating-item">
+        <input type="radio" id="rate-4" name="rating" value="4" required>
+        <label for="rate-4">☆☆☆☆</label>
+    </div>
+    <div class="rating-item">
+        <input type="radio" id="rate-5" name="rating" value="5" required>
+        <label for="rate-5">☆☆☆☆☆</label>
+    </div>
+</div>
     </div>
 
 
@@ -59,36 +65,50 @@
 
 
     <div class="form-group">
-        <label>Useful Features (Check all that apply)</label>
+        <label class="group-title">Useful Features (Check all that apply)</label>
         <div class="checkbox-container">
+        
+        <div class="checkbox-item">
             <input type="checkbox" id="feat-durability" name="features" value="durability">
             <label for="feat-durability">Durability</label>
+        </div>
 
+        <div class="checkbox-item">
             <input type="checkbox" id="feat-design" name="features" value="design">
             <label for="feat-design">Design</label>
+        </div>
 
+        <div class="checkbox-item">
             <input type="checkbox" id="feat-performance" name="features" value="performance">
             <label for="feat-performance">Performance</label>
+        </div>
 
+        <div class="checkbox-item">
             <input type="checkbox" id="feat-ease" name="features" value="ease-of-use">
             <label for="feat-ease">Ease of Use</label>
         </div>
+        
     </div>
+</div>
 
 
     <div class="form-group">
-        <label for="written-review">Written Review</label>
+        <label for="written-review">
+            Written Review <span class="optional-text">(Optional)</span>
+        </label>
         <textarea id="written-review" name="writtenReview" rows="4" placeholder="Write your review here..."></textarea>
     </div>
 
 
     <div class="form-group">
-        <label for="user-name">User Name</label>
-        <input type="text" id="user-name" name="userName" placeholder="e.g. Jane Doe">
-    </div>
+    <label for="user-name">
+        User Name <span class="optional-text">(Optional)</span>
+    </label>
+    <input type="text" id="user-name" name="userName" placeholder="e.g. Jane Doe">
+</div>
 
 
-    <input type="submit" value="Submit Review">
+    <input type="submit" value="Post Review">
 </form>
 
         </main>
