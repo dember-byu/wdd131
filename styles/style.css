@@ -81,18 +81,26 @@ select,
 textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #767676;
+    border: 2px solid #595959 !important;
     border-radius: 4px;
     box-sizing: border-box;
     font-size: 16px;
     background-color: #ffffff !important;
-    color: #212529 !important; 
+    color: #000000 !important; 
 }
 
 input::placeholder,
 textarea::placeholder {
-    color: #555555 !important; 
-    opacity: 1; 
+    color: #595959 !important; 
+    opacity: 1 !important; 
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid #0056b3 !important; 
+    border-color: #0056b3 !important;
 }
 
 .rating-container {
@@ -187,7 +195,7 @@ textarea::placeholder {
 }
 
 input[type="submit"], .btn-link {
-    background-color: #27ae60;
+    background-color: #1EFF00;
     color: white;
     padding: 12px;
     border: none;
@@ -202,8 +210,8 @@ input[type="submit"], .btn-link {
     box-sizing: border-box;
 }
 
-input[type="submit"]:hover, .btn-link:hover {
-    background-color: #219653;
+.btn-link:hover {
+    background-color: #1EFF00;
 }
 
 
