@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trails Directory - Eco-Trails Tiraque</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <header>
+    <h1>🥾 Trails Directory</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="trails.html">Trails Directory</a>
+      <a href="checklist.html">Pack Checklist</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Explore Hiking Paths & Lagoons</h2>
+    <p>Filter through our real and planned regional trails based on your personal physical experience level.</p>
+    
+
+    <div class="filter-buttons">
+      <button type="button" onclick="filterTrails('all')">Show All Routes</button>
+      <button type="button" onclick="filterTrails('Easy')">Easy Paths</button>
+      <button type="button" onclick="filterTrails('Moderate')">Moderate Hikes</button>
+      <button type="button" onclick="filterTrails('Hard')">Hard Horizons</button>
+    </div>
+
+    <div id="trails-grid" class="grid">
+    </div>
+  </main>
+
+
+  <div id="image-modal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.9); align-items: center; justify-content: center; cursor: pointer;" onclick="closeModal()">
+    <span style="position: absolute; top: 20px; right: 35px; color: white; font-size: 40px; font-weight: bold;">&times;</span>
+    <img id="modal-img" src="" alt="Fullscreen view" style="max-width: 90%; max-height: 80%; border-radius: 8px;">
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Eco-Trails Tiraque By Dember Perez. | <a href="references.html">References & Citations</a></p>
+  </footer>
+
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
+
